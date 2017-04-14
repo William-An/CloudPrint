@@ -9,7 +9,7 @@ A cloud printer server base on [webpy](https://github.com/webpy/webpy) and winwo
 ## Installation ##
 
 ### Prerequisite ###
-* A PC with Word installed
+* A PC with Microsoft Word installed
 * Add the dir of `winword.exe` to PATH
 
 ### The server ###
