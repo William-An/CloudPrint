@@ -38,7 +38,6 @@ if __name__ == "__main__":
 def doc_print(filename,printer='winword'):
     try:
         subprocess.run([printer,filename,"/mFilePrintDefault"],timeout=30)
-        os.system("taskkill /im "+printer)
         os.system("del "+filename)
     except:
         os.system("del "+filename)   # Clear

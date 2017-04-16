@@ -4,7 +4,6 @@ A cloud printer server base on [webpy](https://github.com/webpy/webpy) and winwo
 ## Procedure ##
 * Use webpy to handle submission
 * Use `winword.exe` to print doc/docx file
-* Use `taskkill` to kill Word after printing
 
 ## Installation ##
 
