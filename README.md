@@ -4,16 +4,14 @@ A cloud printer server base on [webpy](https://github.com/webpy/webpy) and winwo
 ## Procedure ##
 * Use webpy to handle submission
 * Use `winword.exe` to print doc/docx file
+* Use `acrobat.exe` to print pdf file
 
 ## Installation ##
 
 ### Prerequisite ###
-* A PC with Microsoft Word installed
-* Add the dir of `winword.exe` to PATH
+* A PC with Microsoft Word and Adobe Acrobat installed
+* Add the dir of `winword.exe` and `acrobat.exe` to PATH
 
 ### The server ###
 * Clone/download this repository
 * Run server.py
-
-## TODO ##
-* Add support for pdf file

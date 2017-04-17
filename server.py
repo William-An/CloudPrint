@@ -23,7 +23,7 @@ class Upload:
             fout.close()                                    # closes the file, upload complete.
         filename = filedir+"\\"+filename
         if 'doc' or 'pdf' in filename[-4:]:                
-            doc_print(filename)
+            printer(filename)
         # else if 'pdf'in filename[-4:]: TODO finish pdf printing
         #     doc_print(filename,printer='arco')
         raise web.seeother('/upload')
@@ -35,9 +35,12 @@ if __name__ == "__main__":
 
 
                         
-def doc_print(filename,printer='winword'):
+def printer(filename,printer='winword'):
     try:
-        subprocess.run([printer,filename,"/mFilePrintDefault"],timeout=30)
+    	if printer='winword':
+        	subprocess.run([printer,filename,"/mFilePrintDefault"],timeout=30)
+        else if printer = 'acrobat':
+        	subprocess.run([printer,filename,'/t'],timeout=30)
         os.system("del "+filename)
     except:
         os.system("del "+filename)   # Clear
