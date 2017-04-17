@@ -15,3 +15,5 @@ A cloud printer server base on [webpy](https://github.com/webpy/webpy) and winwo
 * Clone/download this repository
 * Run server.py
 
+## TODO ##
+* Add support for pdf file
