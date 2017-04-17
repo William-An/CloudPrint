@@ -40,7 +40,7 @@ def printer(filename,printer='winword'):
         if printer == 'winword':
         	subprocess.run([printer,filename,"/mFilePrintDefault"],timeout=30)
         elif printer == 'acrobat':
-            subprocess.run([printer,filename,'/t'],timeout=30)
+            subprocess.run([printer,'/t',filename],timeout=30)
         os.system("del "+filename)
     except:
         os.system("del "+filename)   # Clear
